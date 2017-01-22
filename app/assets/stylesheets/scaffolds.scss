@@ -21,15 +21,17 @@ pre {
 }
 
 a {
-  color: #000;
 
+  color:  #FFFFFF;
+
+  
   &:visited {
-    color: #666;
+    color: #FFFFFF;
   }
 
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: #FFFFFF;
+    
   }
 }
 
@@ -74,7 +76,7 @@ div {
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0;
-    background-color: #c00;
+    background-color: #FFFFFF;
     color: #fff;
   }
 
@@ -87,3 +89,4 @@ div {
 label {
   display: block;
 }
+
