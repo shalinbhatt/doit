@@ -6,12 +6,15 @@
 #
 default: &default
   adapter: postgresql
+  encoding: utf8
+  username: postgres
+  password: 1234
   pool: 5
   timeout: 5000
 
 development:
   <<: *default
-  database: db/development
+  databases: todoism
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -19,9 +22,11 @@ development:
 test:
   <<: *default
   database: db/test.sqlite3
+  
 
 production:
   adapter: postgresql
+  password: 1234
   databases: todoism
   encoding: utf8
   min_messages: warning
